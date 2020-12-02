@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace GitlabHours
@@ -17,46 +12,24 @@ namespace GitlabHours
             _hourConverter = new HourConverter();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            var input = entryHours.Text;
-            var output = _hourConverter.Convert(input);
-            labelHours.Text = output;
-        }
-
-        private void AppendUnit(string hourUnit)
+        private void AppendUnit(string logUnit)
         {
             var currentText = entryHours.Text;
-            currentText += hourUnit + " ";
+            currentText += logUnit + " ";
             entryHours.Text = currentText;
             entryHours.Focus();
             entryHours.CursorPosition = entryHours.Text.Length;
         }
 
-        private void buttonMonth_Clicked(object sender, EventArgs e)
-        {
-            AppendUnit(LogUnit.Month);
-        }
+        private void buttonMonth_Clicked(object sender, EventArgs e) => AppendUnit(LogUnit.Month);
 
-        private void buttonWeek_Clicked(object sender, EventArgs e)
-        {
-            AppendUnit(LogUnit.Week);
-        }
+        private void buttonWeek_Clicked(object sender, EventArgs e) => AppendUnit(LogUnit.Week);
 
-        private void buttonDay_Clicked(object sender, EventArgs e)
-        {
-            AppendUnit(LogUnit.Day);
-        }
+        private void buttonDay_Clicked(object sender, EventArgs e) => AppendUnit(LogUnit.Day);
 
-        private void buttonHour_Clicked(object sender, EventArgs e)
-        {
-            AppendUnit(LogUnit.Hour);
-        }
+        private void buttonHour_Clicked(object sender, EventArgs e) => AppendUnit(LogUnit.Hour);
 
-        private void buttonMinute_Clicked(object sender, EventArgs e)
-        {
-            AppendUnit(LogUnit.Minute);
-        }
+        private void buttonMinute_Clicked(object sender, EventArgs e) => AppendUnit(LogUnit.Minute);
 
         private void buttonClear_Clicked(object sender, EventArgs e)
         {
@@ -66,7 +39,9 @@ namespace GitlabHours
 
         private void entryHours_TextChanged(object sender, TextChangedEventArgs e)
         {
-            Button_Clicked(sender, e);
+            var input = entryHours.Text;
+            var output = _hourConverter.Convert(input);
+            labelHours.Text = output;
         }
     }
 }
