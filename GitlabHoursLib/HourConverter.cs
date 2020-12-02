@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GitlabHours
+namespace GitlabHoursLib
 {
     public class HourConverter
     {

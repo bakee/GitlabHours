@@ -1,4 +1,4 @@
-﻿namespace GitlabHours
+﻿namespace GitlabHoursLib
 {
     public abstract class Parser : IParser
     {

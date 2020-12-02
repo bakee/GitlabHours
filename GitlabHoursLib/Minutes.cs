@@ -1,4 +1,4 @@
-﻿namespace GitlabHours
+﻿namespace GitlabHoursLib
 {
     public static class Minutes
     {

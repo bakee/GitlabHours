@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GitlabHoursLib;
+using System;
 using Xamarin.Forms;
 
 namespace GitlabHours

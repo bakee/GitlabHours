@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitlabHours.Android", "Gitl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitlabHours.iOS", "GitlabHours\GitlabHours.iOS\GitlabHours.iOS.csproj", "{E69DDF1F-DA8D-408F-95AD-109C55F8EDA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitlabHours", "GitlabHours\GitlabHours\GitlabHours.csproj", "{8AA44C98-DBFA-4573-807E-6F29D1DA61EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitlabHours", "GitlabHours\GitlabHours\GitlabHours.csproj", "{8AA44C98-DBFA-4573-807E-6F29D1DA61EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitlabHoursLib", "GitlabHoursLib\GitlabHoursLib.csproj", "{E04FAC6A-2A08-4B8C-B528-0327F11E9DBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +75,18 @@ Global
 		{8AA44C98-DBFA-4573-807E-6F29D1DA61EE}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{8AA44C98-DBFA-4573-807E-6F29D1DA61EE}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{8AA44C98-DBFA-4573-807E-6F29D1DA61EE}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
+		{E04FAC6A-2A08-4B8C-B528-0327F11E9DBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E04FAC6A-2A08-4B8C-B528-0327F11E9DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E04FAC6A-2A08-4B8C-B528-0327F11E9DBB}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{E04FAC6A-2A08-4B8C-B528-0327F11E9DBB}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{E04FAC6A-2A08-4B8C-B528-0327F11E9DBB}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{E04FAC6A-2A08-4B8C-B528-0327F11E9DBB}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{E04FAC6A-2A08-4B8C-B528-0327F11E9DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E04FAC6A-2A08-4B8C-B528-0327F11E9DBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E04FAC6A-2A08-4B8C-B528-0327F11E9DBB}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{E04FAC6A-2A08-4B8C-B528-0327F11E9DBB}.Release|iPhone.Build.0 = Release|Any CPU
+		{E04FAC6A-2A08-4B8C-B528-0327F11E9DBB}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{E04FAC6A-2A08-4B8C-B528-0327F11E9DBB}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

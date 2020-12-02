@@ -1,8 +1,8 @@
-﻿namespace GitlabHours
+﻿namespace GitlabHoursLib
 {
     public class WeekParser : Parser
     {
-        protected override string LogUnit => GitlabHours.LogUnit.Week;
+        protected override string LogUnit => GitlabHoursLib.LogUnit.Week;
         protected override int MinutesInUnit => Minutes.InAWeek;
     }
 }

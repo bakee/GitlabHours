@@ -1,8 +1,8 @@
-﻿namespace GitlabHours
+﻿namespace GitlabHoursLib
 {
     public class MinuteParser : Parser
     {
-        protected override string LogUnit => GitlabHours.LogUnit.Minute;
+        protected override string LogUnit => GitlabHoursLib.LogUnit.Minute;
         protected override int MinutesInUnit => 1;
     }
 }

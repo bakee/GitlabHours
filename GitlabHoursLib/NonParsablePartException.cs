@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GitlabHours
+namespace GitlabHoursLib
 {
     public class NonParsablePartException : Exception { }
 }
