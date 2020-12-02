@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GitlabHours.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" CornerRadius="0">
+            <Label Text="GitLab Hour Calculator" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
+        </Frame>
+        <Entry x:Name="entryHours" Placeholder="3mo 2w 4d 5h 30m"
+               HorizontalTextAlignment="End" Keyboard="Numeric"
+               TextChanged="entryHours_TextChanged"/>
+        <Grid          
+            HorizontalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" x:Name="buttonMonth" Text="mo" Clicked="buttonMonth_Clicked"/>
+            <Button Grid.Column="1" x:Name="buttonWeek" Text="w" Clicked="buttonWeek_Clicked"/>
+            <Button Grid.Column="2" x:Name="buttonDay" Text="d" Clicked="buttonDay_Clicked"/>
+            <Button Grid.Column="3" x:Name="buttonHour" Text="h" Clicked="buttonHour_Clicked"/>
+            <Button Grid.Column="4" x:Name="buttonMinute" Text="m" Clicked="buttonMinute_Clicked"/>
+        </Grid>
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="labelHours"/>
+        </StackLayout>
+        <Button x:Name="buttonClear" Text="Clear" Clicked="buttonClear_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>
